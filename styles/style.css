@@ -1,10 +1,9 @@
-
 .inter-typeface {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
 
 /* script font miama adding */
@@ -13,38 +12,158 @@
     src: url(../fonts/Miama.ttf);
 }
 
-.font-script{
+.font-script {
     font-family: miama;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #000000;
 }
 
 /* Sheared style start */
-.primary-color{
+/* color  */
+.primary-color {
     color: #E6533C;
 }
-.secondary-color{
+
+.secondary-color {
     color: rgba(255, 255, 255, 0.5)
 }
 
-.title-color{
+.title-color {
     color: #ffffff;
 }
-.txt-color{
- color: rgba(255, 255, 255, 0.5)
+
+.txt-color {
+    color: rgba(255, 255, 255, 0.5)
 }
-.input-field-color{
+
+.input-bg-color {
     color: rgba(255, 255, 255, 0.1);
 }
-.placeholder-color{
+
+.placeholder-color {
     color: rgba(255, 255, 255, 0.6)
 }
 
+/* color end  */
+/* title size and color  */
+h1 {
+    font-size: 78px;
+    color: #ffffff;
+}
 
+h2 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 28px;
+}
 
 /* Sheared style end */
+/* -------------- */
+/* Navigation bar related style start  */
+.hero-section {
+    margin: 50px 190px 100px 190px
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-name {
+    font-size: 36px;
+    font-style: italic;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+}
+
+#active-menu {
+    background-color: #E6533C;
+    border-radius: 46px;
+    font-weight: 600;
+    padding: 8px 20px;
+}
+
+.menu-items {
+    list-style: none;
+    /* padding: 8px 20px; */
+    line-height: auto;
+
+}
+
+
+.menu-items>a {
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.hamburger-menu {
+    color: #ffffff;
+    display: none;
+}
+
+/* Navigation bar responsive  mobile*/
+@media screen and (max-width: 576px) {
+    .hamburger-menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+    .hero-section {
+        margin: 50px 20px 0px 20px
+    }
+
+}
+/* Navigation bar responsive  tablet*/
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .hero-section {
+        margin: 50px 20px 0px 20px
+    }
+    .menu-items {
+        list-style: none;
+        padding: 8px 10px;
+        line-height: auto;
+    
+    }
+}
+
+/* Navigation bar related style end  */
+
+
+
+
+
+
+
+/* reuse media quary */
+/* @media screen and (max-width: 576px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+
+} */
