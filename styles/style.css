@@ -16,3 +16,35 @@
 .font-script{
     font-family: miama;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+}
+
+/* Sheared style start */
+.primary-color{
+    color: #E6533C;
+}
+.secondary-color{
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.title-color{
+    color: #ffffff;
+}
+.txt-color{
+ color: rgba(255, 255, 255, 0.5)
+}
+.input-field-color{
+    color: rgba(255, 255, 255, 0.1);
+}
+.placeholder-color{
+    color: rgba(255, 255, 255, 0.6)
+}
+
+
+
+/* Sheared style end */
