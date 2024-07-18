@@ -60,6 +60,7 @@ h1 {
 
 h2 {
     font-size: 48px;
+    font-weight: 900;
     color: #ffffff;
 }
 
@@ -87,7 +88,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 14px;
+    column-gap: 14px;
 }
 
 .primary-btn {
@@ -405,10 +406,36 @@ h4 {
 main{
 
 }
+/* Change your habbit section  */
+.change-habbit-container{
+    padding-top: ;
+    max-width: 1060px;
+    margin: 100px auto 0;
+}
+.change-habbit-title{
+    text-align: center;
+}
+.change-habbit-title > p{
+    margin-top: 14px;
+}
 
+.image-card{
+    
+    text-align: center;
+}
+.image-card img{
+    border-radius: 50%;
+}
 
+.image-card h6{
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
 
-
+.image-card p{
+    color: rgba(255, 255, 255, 0.5)
+}
 /* reuse media quary */
 /* @media screen and (max-width: 576px) {
 
