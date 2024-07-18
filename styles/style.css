@@ -72,16 +72,46 @@ h4 {
     font-size: 28px;
 }
 
+.space{
+    height: 50vh;
+}
+.container{
+    margin: 0 190px 0 190px;
+}
+.button-container{
+    margin: 28px 0 0 0;
+    /* padding-bottom: 76px; */
+}
+.primary-btn{
+    background-color: #E6533C;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 42px;
+    padding: 16px 40px;
+    font-family: Inter;
+}
+.secondary-btn{
+    background: none;
+    border: 1px solid #ffffff;
+    color: white;
+    font-weight: 600;
+    border-radius: 42px;
+    padding:16px 40px ;  
+}
 /* Sheared style end */
 /* -------------- */
 /* Navigation bar related style start  */
 .hero-section {
-    margin: 50px 190px 100px 190px
+    background: rgb(119,119,119);
+background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
 }
 
 .navigation-bar {
     display: flex;
     justify-content: space-between;
+    margin: 50px 190px 0px 190px
+    
 }
 
 .brand-name {
@@ -124,6 +154,7 @@ h4 {
     display: none;
 }
 
+
 /* Navigation bar responsive  mobile*/
 @media screen and (max-width: 576px) {
     .hamburger-menu{
@@ -133,14 +164,15 @@ h4 {
         display: none;
     }
 
-    .hero-section {
+    .navigation-bar {
         margin: 50px 20px 0px 20px
+        
     }
 
 }
 /* Navigation bar responsive  tablet*/
 @media screen and (min-width: 576px) and (max-width:992px) {
-    .hero-section {
+    .navigation-bar {
         margin: 50px 20px 0px 20px
     }
     .menu-items {
@@ -152,7 +184,83 @@ h4 {
 }
 
 /* Navigation bar related style end  */
+/* ------------------- */
+/* hero banner related style  */
+.hero-banner{
+    max-width: 1440px;
+    margin-top: 100px;
+    
+}
+.hero-container
+{
+    max-width: 100%;
+    margin: 0 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.hero-banner-text{
+    max-width: 50%;
+}
+.hero-title{
+    line-height: 120%;
+ 
+}
+/* over a text, text positioning style   */
+.script-text{
+    display: inline-block;
+    font-size: 150px;
+    font-weight: 400;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+/* -------------- */
+.hero-text{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: .5px;
+    margin-top: 32px;
+}
+.hero-banner-image{
+    max-width: 50%;
+    position: relative;
+}
+.hero-banner-image  img{
+    width: 100%;
+}
+.video-turorial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 206px;
+    height: 96px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54); 
+    position: absolute;
+    bottom: 63px;
+    left: -100px;
+    
+}
+.vidio-counter > h5{
+    font-size: 24px ;
+    font-weight: 900;
+    color: #ffffff;
+}
+.vidio-counter > p{
+    color: rgba(239, 237, 232, 0.65);
+    
+}
+.round-shap{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+}
 
+/* hero banner related end */
 
 
 
