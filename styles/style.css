@@ -54,7 +54,7 @@ body {
 /* color end  */
 /* title size and color  */
 h1 {
-    font-size: 78px;
+    font-size: 4.875rem;
     color: #ffffff;
 }
 
@@ -72,17 +72,20 @@ h4 {
     font-size: 28px;
 }
 
-.space{
+.space {
     height: 50vh;
 }
-.container{
+
+.container {
     margin: 0 190px 0 190px;
 }
-.button-container{
+
+.button-container {
     margin: 28px 0 0 0;
     /* padding-bottom: 76px; */
 }
-.primary-btn{
+
+.primary-btn {
     background-color: #E6533C;
     color: #ffffff;
     font-weight: 600;
@@ -91,27 +94,30 @@ h4 {
     padding: 16px 40px;
     font-family: Inter;
 }
-.secondary-btn{
+
+.secondary-btn {
     background: none;
     border: 1px solid #ffffff;
     color: white;
     font-weight: 600;
     border-radius: 42px;
-    padding:16px 40px ;  
+    padding: 16px 40px;
 }
+
 /* Sheared style end */
 /* -------------- */
 /* Navigation bar related style start  */
 .hero-section {
-    background: rgb(119,119,119);
-background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+    background: rgb(119, 119, 119);
+    background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
 }
 
 .navigation-bar {
+    max-width: 1060px;
     display: flex;
     justify-content: space-between;
-    margin: 50px 190px 0px 190px
-    
+    margin: 50px auto;
+    /* margin: 50px 190px 0px 190px; */
 }
 
 .brand-name {
@@ -123,7 +129,7 @@ background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
 .menu {
     display: flex;
     align-items: center;
-    gap: 47px;
+    gap: 28px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 39px;
     padding: 4px;
@@ -138,7 +144,7 @@ background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
 
 .menu-items {
     list-style: none;
-    /* padding: 8px 20px; */
+    padding: 0px 20px;
     line-height: auto;
 
 }
@@ -157,80 +163,87 @@ background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
 
 /* Navigation bar responsive  mobile*/
 @media screen and (max-width: 576px) {
-    .hamburger-menu{
+    .hamburger-menu {
         display: block;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 
     .navigation-bar {
         margin: 50px 20px 0px 20px
-        
     }
 
 }
+
 /* Navigation bar responsive  tablet*/
 @media screen and (min-width: 576px) and (max-width:992px) {
     .navigation-bar {
         margin: 50px 20px 0px 20px
     }
+
     .menu-items {
         list-style: none;
         padding: 8px 10px;
         line-height: auto;
-    
+
     }
 }
 
 /* Navigation bar related style end  */
 /* ------------------- */
 /* hero banner related style  */
-.hero-banner{
-    max-width: 1440px;
-    margin-top: 100px;
-    
+.hero-banner {
+    margin-top: 50px;
 }
-.hero-container
-{
-    max-width: 100%;
-    margin: 0 190px;
+
+.hero-container {
+    max-width: 1060px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 100px;
 }
-.hero-banner-text{
+
+.hero-banner-text {
     max-width: 50%;
 }
-.hero-title{
+
+.hero-title {
     line-height: 120%;
- 
+
 }
+
 /* over a text, text positioning style   */
-.script-text{
+.script-text {
     display: inline-block;
-    font-size: 150px;
+    font-size: 9rem;
     font-weight: 400;
     margin-top: -50px;
     margin-bottom: -50px;
 }
+
 /* -------------- */
-.hero-text{
+.hero-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: .5px;
     margin-top: 32px;
 }
-.hero-banner-image{
+
+.hero-banner-image {
     max-width: 50%;
     position: relative;
 }
-.hero-banner-image  img{
+
+.hero-banner-image img {
     width: 100%;
 }
-.video-turorial{
+
+.video-turorial {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -238,27 +251,121 @@ background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
     height: 96px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    background-color: rgba(48, 48, 48, 0.54); 
+    background-color: rgba(48, 48, 48, 0.54);
     position: absolute;
     bottom: 63px;
     left: -100px;
-    
+
 }
-.vidio-counter > h5{
-    font-size: 24px ;
+
+.vidio-counter>h5 {
+    font-size: 24px;
     font-weight: 900;
     color: #ffffff;
 }
-.vidio-counter > p{
+
+.vidio-counter>p {
     color: rgba(239, 237, 232, 0.65);
-    
+    letter-spacing: .5px;
+
 }
-.round-shap{
+
+.round-shap {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #E6533C;
 }
+
+.free-workout {
+    padding: 17px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    position: absolute;
+    top: 100px;
+    right: -50px;
+}
+
+.free-workout>h5 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.free-workout>p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 1px;
+}
+
+/* hero banner responsive */
+@media screen and (max-width: 576px) {
+    .hero-section {
+        background: rgb(119, 119, 119);
+        background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+    }
+    
+    .hero-container{
+        flex-direction: column;
+    }
+    .hero-banner-text {
+        max-width: 100%;
+    }
+
+    /* .hero-title{
+        font-size: ;
+    } */
+    .hero-container {
+        align-items: start;
+        padding-left:20px ;
+        gap: 60px;
+    }
+    .hero-banner-image{
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-banner-image{
+        width: 100%;
+    }
+    .hero-banner-image img{
+        width: 350px;
+    }
+    .video-turorial{
+        bottom: 150px;
+        left: 50px;
+        width: 156px;
+        height: 72px;
+        text-align: left;
+
+    }
+    .video-turorial h5{
+        font-size: 18px;
+    }
+    .video-turorial p{
+        font-size: 12px;
+    }
+
+    .free-workout{
+        top: 150px;
+        right: 50px;
+        width: 150px;
+        height: 60px;
+        text-align: left;  
+        padding-top: 20px; 
+    }
+    .free-workout h5{
+       font-size: 30px    
+    }
+    /* .script-text{
+        font-size: 60px;
+    } */
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {}
+
 
 /* hero banner related end */
 
