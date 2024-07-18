@@ -6,3 +6,13 @@
   font-variation-settings:
     "slnt" 0;
 }
+
+/* script font miama adding */
+@font-face {
+    font-family: miama;
+    src: url(../fonts/Miama.ttf);
+}
+
+.font-script{
+    font-family: miama;
+}
