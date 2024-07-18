@@ -418,13 +418,26 @@ main{
 .change-habbit-title > p{
     margin-top: 14px;
 }
-
-.image-card{
+.change-habbit-cards{
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     
+}
+.image-card{
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column; */
     text-align: center;
+    padding: 20px;
+    /* gap: 30px; */
 }
 .image-card img{
+    border:4px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    
 }
 
 .image-card h6{
@@ -434,7 +447,51 @@ main{
 }
 
 .image-card p{
-    color: rgba(255, 255, 255, 0.5)
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+/* chang habbit section reponsive */
+@media screen and (max-width: 576px) {
+    .change-habbit-container{
+        margin: 0 auto;
+
+    }
+    .change-habbit-title{
+        
+    }
+    .change-habbit-title h2{
+        font-size: 32px;
+    }
+    .change-habbit-title p{
+        padding: 0 110px;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: .3px;
+    }
+    .change-habbit-cards{
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 110px;
+    }
+    .image-card{
+        padding: 0px 40px;
+    }
+    .image-card h6{
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .image-card p{
+        font-size: 14px;
+        padding: 0 20px;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+
 }
 /* reuse media quary */
 /* @media screen and (max-width: 576px) {
