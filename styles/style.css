@@ -86,8 +86,8 @@ h4 {
     text-align: center;
     padding-bottom: 76px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     column-gap: 14px;
 }
 
@@ -97,7 +97,7 @@ h4 {
     border: none;
     border-radius: 42px;
     padding: 16px 40px;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
@@ -108,7 +108,7 @@ h4 {
     color: white;
     border-radius: 42px;
     padding: 16px 40px;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
@@ -117,15 +117,17 @@ h4 {
 /* -------------- */
 /* Navigation bar related style start  */
 .hero-section {
-    background: rgb(119, 119, 119);
-    background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+    background-image: linear-gradient(180deg, rgb(17, 17, 17) 0%, rgba(119, 119, 119, 0.00) 100%);
+    padding-top: 50px;
+    /* background: rgb(119, 119, 119); */
+    /* background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); */
 }
 
 .navigation-bar {
     max-width: 1060px;
     display: flex;
     justify-content: space-between;
-    margin: 50px auto;
+    margin: 0px auto;
     /* margin: 50px 190px 0px 190px; */
 }
 
@@ -212,12 +214,11 @@ h4 {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 100px;
 }
 
 .hero-banner-text {
-    /* max-width: 50%; */
+    max-width: 520px;
 }
 
 .hero-title {
@@ -312,15 +313,17 @@ h4 {
 /* hero banner responsive */
 @media screen and (max-width: 576px) {
     .hero-section {
-        background: rgb(119, 119, 119);
-        background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0));
+        /* background: rgb(119, 119, 119);
+        background: linear-gradient(0deg, rgba(17, 17, 17, 1), rgba(119, 119, 119, 0)); */
+
     }
-    
-    .hero-container{
+
+    .hero-container {
         flex-direction: column;
     }
+
     .hero-banner-text {
-       max-width: 100vh;
+        max-width: 100vh;
     }
 
     /* .hero-title{
@@ -334,24 +337,31 @@ h4 {
     } */
     .hero-container {
         align-items: start;
-        padding-left:20px ;
+        padding-left: 20px;
         gap: 60px;
     }
-    .button-container{
+
+    .button-container {
         width: 100%;
     }
     
-    .hero-banner-image{
+    .hero-banner-image {
         max-width: 100%;
+        
+    }
+
+    .hero-banner-image {
+        width: 100%;
+        height: ;
         text-align: center;
     }
-    .hero-banner-image{
-        width: 100%;
-    }
-    .hero-banner-image img{
+
+    .hero-banner-image img {
         width: 350px;
+        
     }
-    .video-turorial{
+
+    .video-turorial {
         bottom: 150px;
         left: 50px;
         width: 156px;
@@ -359,38 +369,46 @@ h4 {
         text-align: left;
 
     }
-    .video-turorial h5{
+
+    .video-turorial h5 {
         font-size: 18px;
     }
-    .video-turorial p{
+
+    .video-turorial p {
         font-size: 12px;
     }
 
-    .free-workout{
+    .free-workout {
         top: 150px;
         right: 50px;
         width: 150px;
         height: 60px;
-        text-align: left;  
-        padding-top: 20px; 
+        text-align: left;
+        padding-top: 20px;
     }
-    .free-workout h5{
-       font-size: 30px    
+
+    .free-workout h5 {
+        font-size: 30px
     }
-    .hero-text{
+
+    .hero-text {
         margin-bottom: 44px;
     }
-    .display-none{
+
+    .display-none {
         display: none;
     }
+
     /* .script-text{
         font-size: 60px;
     } */
-    .primary-btn, .secondary-btn{
+    .primary-btn,
+    .secondary-btn {
         font-size: 18px;
 
     }
-    .secondary-btn{
+
+    .secondary-btn {
         padding: 16px 20px;
     }
 
@@ -403,96 +421,672 @@ h4 {
 
 /* -------- */
 
-main{
 
-}
 /* Change your habbit section  */
-.change-habbit-container{
+.change-habbit-container {
     padding-top: ;
     max-width: 1060px;
     margin: 100px auto 0;
 }
-.change-habbit-title{
+
+.change-habbit-title {
     text-align: center;
 }
-.change-habbit-title > p{
+
+.change-habbit-title>p {
     margin-top: 14px;
+    padding: 0 180px;
+    line-height: 24px;
+    letter-spacing: .3px;
 }
-.change-habbit-cards{
+
+.change-habbit-cards {
     margin-top: 58px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
-    
-}
-.image-card{
-    /* display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column; */
-    text-align: center;
-    padding: 20px;
-    /* gap: 30px; */
-}
-.image-card img{
-    border:4px solid rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    
+
+
 }
 
-.image-card h6{
-    color:#ffffff;
+.image-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-card img {
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+}
+
+.image-card h6 {
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
 }
 
-.image-card p{
+.image-card p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
     margin-top: 6px;
 }
+
 /* chang habbit section reponsive */
 @media screen and (max-width: 576px) {
-    .change-habbit-container{
+    .change-habbit-container {
         margin: 0 auto;
 
     }
-    .change-habbit-title{
-        
-    }
-    .change-habbit-title h2{
+
+    .change-habbit-title {}
+
+    .change-habbit-title h2 {
         font-size: 32px;
     }
-    .change-habbit-title p{
+
+    .change-habbit-title p {
         padding: 0 110px;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: .3px;
     }
-    .change-habbit-cards{
+
+    .change-habbit-cards {
         flex-direction: column;
         gap: 40px;
         padding: 0 110px;
     }
-    .image-card{
+
+    .image-card {
         padding: 0px 40px;
     }
-    .image-card h6{
+
+    .image-card h6 {
         margin-top: 30px;
         font-size: 16px;
         font-weight: 500;
     }
-    
-    .image-card p{
+
+    .image-card p {
         font-size: 14px;
         padding: 0 20px;
         margin-top: 6px;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width:992px) {
+@media screen and (min-width: 576px) and (max-width:992px) {}
+
+/* run extra mile section rlated style */
+.run-extra-mile {}
+
+.run-extra-mile-container {
+    margin: 100px auto 0;
+    max-width: 1060px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
+.run-extra-mile-title {
+    width: 50%;
+    padding: 30px 32px;
+}
+
+.run-extra-mile-title p {
+    margin-top: 14px;
+    margin-bottom: 34px;
+    line-height: 24px;
+    letter-spacing: .3px;
+}
+
+.run-etra-maile-image {
+    width: 40%;
+    padding: 30px 32px;
+
+}
+
+.run-etra-maile-image img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+/* section responsive  */
+@media screen and (max-width: 576px) {
+    .run-extra-mile {
+        padding: 0 20px;
+    }
+
+    .run-extra-mile-container {
+        width: 100%;
+        flex-direction: column;
+        align-content: space-between;
+
+    }
+
+    .run-extra-mile-title {
+        width: 90%;
+        margin-top: 32px;
+        padding: 0;
+
+    }
+
+    .run-etra-maile-image {
+        width: 90%;
+        margin: 32px auto;
+        padding: 0;
+    }
+
+    #bnt-full-width{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {}
+
+/* run extra mile section rlated end */
+
+/* <!-- training-exercises rlated style start --> */
+
+.training-exerciese-container {
+    max-width: 1060px;
+    margin: 100px auto;
+}
+
+.training-exercises-text {
+    width: 65%;
+}
+
+.training-exercises-text p {
+    line-height: 24px;
+    letter-spacing: .3px;
+    margin-top: 14px;
+}
+.row-1 {
+    display: grid;
+    grid-template-columns: 250px 520px 290px;
+    grid-template-rows: 200px;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 425px 288px 347px;
+    grid-template-rows: 200px;
+}
+.column-1 {
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(6, 255, 210, 0.50) 0%, rgba(6, 255, 210, 0.50) 100%), url(../images/exercise1.jpg) lightgray 50% / cover no-repeat;
+    
+    /* background-image: url(../images/exercise1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.column-1 p {
+    padding-left: 24px;
+    padding-bottom: 28px;
+}
+
+.column-2 {
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.30) 0%, rgba(255, 0, 0, 0.30) 100%), url(../images/exercise2.png) lightgray -0.336px 0px / 100.125% 111.811% no-repeat;
+    /* background-image: url(../images/exercise2.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+}
+
+.column-2 p {
+    padding-left: 32px;
+    padding-top: 25px;
+}
+
+.column-3 {
+    
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../images/exercise3.png) lightgray 50% / cover no-repeat;
+    /* background-image: url(../images/exercise3.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.column-3 p {
+    padding-left: 24px;
+    padding-bottom: 28px;
+
+}
+
+
+.column-4 {
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url(../images/exercise4.png) lightgray 50% / cover no-repeat;
+    /* background-image: url(../images/exercise4.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+}
+
+.column-4 p {
+    padding-right: 24px;
+    padding-top: 32px;
+}
+
+.column-5 {
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(66, 255, 0, 0.30) 0%, rgba(66, 255, 0, 0.30) 100%), url(../images/exercise5.jpg) lightgray 50% / cover no-repeat;
+    /* background-image: url(../images/exercise5.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.column-5 p {
+    padding-left: 24px;
+    padding-bottom: 28px;
+}
+
+.column-6 {
+    /* height: 200px; */
+    background: linear-gradient(0deg, rgba(0, 71, 255, 0.30) 0%, rgba(0, 71, 255, 0.30) 100%), url(../images/exercise6.jpg) lightgray 50% / cover no-repeat;
+    /* background-image: url(../images/exercise6.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+}
+
+.column-6 p {
+    padding-left: 24px;
+    padding-bottom: 28px;
+}
+
+.training-image-grid img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* resposive */
+
+@media screen and (max-width: 576px) {
+    .column-3 {
+        display: none;
+    }
+
+    .column-6 {
+        display: none;
+    }
+
+    .row-1 {
+        grid-template-columns: 45% 55%;
+        grid-template-rows: 128px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .row-2 {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 128px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    .column-1, .column-2, .column-4, .column-5{
+        height: 128px;
+    }
+
+    .training-exercises-text {
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .column-4 {
+
+        align-items: end;
+    }
+
+    .column-4 p {
+        padding-left: 20px;
+        padding-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width:992px) {}
+
+/* training-exercises section end */
+
+/* BIM calculator related style start */
+table,
+tr,
+th,
+td {
+    color: #ffffff;
+}
+.full-width-gray{
+    background-color: rgba(34, 34, 34, 1);
+    margin-top: 88px;
+}
+.bmi-calculator-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    gap: 150px;
+}
+.bmi-title-container {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.bmi-calculator-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 52px 0;
+}
+.bmi-calculator-text {
+    max-width: 671px;
+    margin: 0 auto;
+}
+
+.health-chart h5 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 52px;
+}
+.bmi-table-calculator p{
+    line-height: 24px;
+    letter-spacing: .3px;
+    margin-top: 14px;
+}
+
+.bmi-table, tr, td, th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+
+}
+td, th{
+    width: 160px;
+    height: 48px;
+    padding-left: 18px;
+}
+
+.health-calculator h5{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    
+}
+.health-calculator p{
+   
+    margin-bottom: 34px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    margin-top: 14px;
+}
+    
+
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+}
+
+.activity-factor{
+    grid-column: span 2;
+}
+.calculator .height, .weight, .age, .sex, .activity-factor, .activity-factor > option{
+    background-color:rgba(255, 255, 255, 0.1) ;
+    color: rgba(255, 255, 255, 0.6) ;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family:"Inter", sans-serif ;
+    font-size: 16px;
+    line-height: 22px;
+}
+.activity-factor{
+    padding: 15px 20px;
+}
+.margin-top{
+    margin-top:34px ;
+}
+
+/* responsive  */
+@media screen and (max-width: 576px) {
+    .bmi-title-container{
+        width: calc(100% - 40px);
+        padding: 0 20px;
+    }
+.bmi-calculator-container{
+    max-width: 100%;
+    padding: 34px 20px 43px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.height, .weight, .age{
+    width:  calc(100% - 40px);
+}
+
+}
+
+
+/* BIM calculator related style end */
+
+
+/* our trainer related style  */
+.our-trainer-container {
+    max-width: 1060px;
+    margin: 88px auto;
+}
+
+.our-trainer-title {
+    text-align: center;
+    max-width: 671px;
+    margin: 0 auto;
+}
+
+.our-trainer-title>p {
+
+    margin-bottom: 50px;
+}
+
+.trainer-img-container {
+    max-width: calc(100% - 40px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 272px);
+    gap: 20px;
+}
+
+.trainer-image-1 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer1.png) lightgray 50% / cover no-repeat;
+}
+
+.trainer-image-2 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer2.png) lightgray 50% / cover no-repeat;
+}
+
+.trainer-image-3 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer3.png) lightgray 50% / cover no-repeat;
+}
+
+.trainer-image-4 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer4.png) lightgray 50% / cover no-repeat;
+}
+
+.trainer-image-5 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer5.png) lightgray 50% / cover no-repeat;
+}
+
+.trainer-image-6 {
+    width: 100%;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+        url(../images/trainer6.png) lightgray 50% / cover no-repeat;
+}
+
+.name-title {
+    position: absolute;
+    left: 20px;
+    bottom: 16px;
+}
+
+.name-title>h5 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .our-trainer-title {
+        max-width: 309px;
+        margin-bottom: 40px;
+
+    }
+
+    .our-trainer-title>h2 {
+        font-size: 32px;
+    }
+
+    .trainer-img-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 272px);
+    }
+
+    .trainer-image-1,
+    .trainer-image-4 {
+        display: none;
+    }
+
+    .trainer-image-2,
+    .trainer-image-3,
+    .trainer-image-5,
+    .trainer-image-6 {
+        
+        background-position: top;
+    }
+}
+
+/* our trainer related style end */
+
+/* Footer relater style start  */
+.footer{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 66px 0 35px;
+    display: grid;
+    grid-template-columns: 443px repeat(2, 1fr);
+    /* grid-template-rows: 1fr; */
+    column-gap: 130px;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+/* .brand-description{
+    width: 443px;
+} */
+.brand-description > h6{
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 120%;
+}
+.brand-description > p{
+ font-size: 14px;
+ line-height: 24px;
+ letter-spacing: .3px;
+}
+
+.footer-menu-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+.get-started li{
+    list-style: none;
+} 
+.footer-menu-item{
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    font-size: 23px; 
+    line-height: 120%;
+
+}
+.copy-right{
+    padding: 36px 0;
+}
+.copy-right > p{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .3px;
+    text-align: center;
+}
+.rular{
+    max-width: 1060px;
+    margin: 0 auto;
+    color: blue;
+}
+/* footer responsive  */
+@media screen and (max-width: 576px) {
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        padding: 44px 20px 0;
+    }
+    .brand-description{
+        margin-bottom: 30px;
+    }
+    .rular{
+        margin: 0 20px;
+    }
+}
+/* Footer relater style end */
+
 /* reuse media quary */
 /* @media screen and (max-width: 576px) {
 
